@@ -291,11 +291,10 @@ h3 {
 
 /* Chain link standalone demo */
 .chain-link-demo {
-  width: 96px;
+  width: 120px;
   height: auto;
   display: block;
   margin-bottom: 0.75rem;
-  image-rendering: auto;
 }
 
 .chain-link-coming {
@@ -319,8 +318,8 @@ h3 {
 }
 
 .hex-badge-wrapper {
-  width: 260px;
-  height: 380px;
+  width: 290px;
+  height: 390px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
