@@ -1,0 +1,325 @@
+/* ─────────────────────────────────────────
+   THE BIKER & BAKER — Brand Reference Site
+   ───────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --brand-blue:   #2855A4;
+  --cream:        #F2E6D0;
+  --dark:         #1A1A1A;
+  --mid:          #555;
+  --light:        #f9f7f4;
+  --border:       #e0d8cc;
+  --radius:       8px;
+  --max-width:    1100px;
+}
+
+body {
+  font-family: 'Cabin', Georgia, serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--brand-blue);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+}
+
+header h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+header h1 span {
+  color: var(--cream);
+}
+
+.tagline {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ── NAV ── */
+nav {
+  background: var(--dark);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: var(--brand-blue);
+}
+
+/* ── MAIN ── */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+section {
+  padding: 3.5rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-child { border-bottom: none; }
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  margin-bottom: 1.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  margin: 1.5rem 0 1rem;
+}
+
+/* ── COLOR SWATCHES ── */
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.swatch {
+  width: 140px;
+}
+
+.color-block {
+  width: 100%;
+  height: 80px;
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+}
+
+.swatch-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.swatch-detail {
+  font-size: 0.78rem;
+  color: var(--mid);
+  line-height: 1.4;
+}
+
+.swatch-use {
+  font-size: 0.75rem;
+  color: var(--brand-blue);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+/* ── TYPOGRAPHY ── */
+.type-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.type-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.type-sample {
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.type-label {
+  font-size: 0.8rem;
+  color: var(--mid);
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ── VOICE ── */
+.voice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .voice-grid { grid-template-columns: 1fr; }
+}
+
+.voice-card {
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.voice-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.voice-do {
+  background: var(--brand-blue);
+  color: white;
+}
+
+.voice-do li { color: rgba(255,255,255,0.9); }
+.voice-do strong { color: white; }
+
+.voice-dont {
+  background: var(--dark);
+  color: rgba(255,255,255,0.8);
+}
+
+.voice-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.brand-name-rule {
+  background: var(--cream);
+  border-left: 4px solid var(--brand-blue);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.phrases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.phrase {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--brand-blue);
+}
+
+/* ── PILLARS ── */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pillar {
+  background: white;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--brand-blue);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.pillar h3 {
+  color: var(--dark);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.pillar p {
+  font-size: 0.85rem;
+  color: var(--mid);
+  line-height: 1.5;
+}
+
+/* ── FLAVORS ── */
+.flavors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.flavor-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.flavor-card h3 {
+  color: var(--dark);
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.bag-color {
+  font-size: 0.8rem;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.flavor-card p:last-child {
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.5;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.footer-note {
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
