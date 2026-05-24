@@ -283,10 +283,23 @@ h3 {
 /* Chain link standalone demo */
 .chain-link-demo {
   width: 52px;
-  height: auto;
+  height: 20px;
   display: block;
+  margin-bottom: 0.75rem;
+}
+
+.chain-link-coming {
+  font-size: 0.8rem;
+  color: var(--mid);
   margin-bottom: 1.5rem;
-  opacity: 0.9;
+}
+
+.chain-link-coming code {
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
 }
 
 /* Hex badge demo */
@@ -309,9 +322,9 @@ h3 {
 
 .chain-link {
   width: 40px;
-  height: auto;
+  height: 16px;
   display: block;
-  color: rgba(255,255,255,0.65);
+  flex-shrink: 0;
 }
 
 .hex-eyebrow {
@@ -550,10 +563,11 @@ h3 {
 }
 
 .flavor-band {
-  padding: 0.55rem 1.25rem;
-  font-size: 0.72rem;
+  padding: 0.65rem 1.25rem;
+  font-family: 'Cabin', Georgia, serif;
+  font-size: 0.9rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: white;
 }
