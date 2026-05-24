@@ -175,6 +175,52 @@ h3 {
   margin-top: 0.2rem;
 }
 
+/* ── LOGO USAGE ── */
+.logo-usage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  .logo-usage { grid-template-columns: 1fr; }
+}
+
+.logo-on-light,
+.logo-on-dark {
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-on-light {
+  background: var(--cream);
+  border: 1px solid var(--border);
+}
+
+.logo-on-dark {
+  background: var(--brand-blue);
+}
+
+.logo-on-light img,
+.logo-on-dark img {
+  width: clamp(140px, 28vw, 220px);
+  height: auto;
+  display: block;
+}
+
+.logo-usage-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
 /* ── TYPOGRAPHY ── */
 .type-grid {
   display: flex;
