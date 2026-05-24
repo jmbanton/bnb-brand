@@ -62,7 +62,7 @@ header {
 .header-logo {
   display: block;
   margin: 0 auto;
-  width: clamp(200px, 40vw, 340px);
+  width: clamp(180px, 28vw, 290px);
   height: auto;
 }
 
@@ -176,24 +176,20 @@ h3 {
 
 /* ── LOGO USAGE ── */
 .logo-usage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-@media (max-width: 500px) {
-  .logo-usage { grid-template-columns: 1fr; }
 }
 
 .logo-on-light,
 .logo-on-dark {
   border-radius: var(--radius);
-  padding: 2.5rem 2rem;
+  padding: 1.75rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .logo-on-light {
@@ -203,17 +199,18 @@ h3 {
 
 .logo-on-dark {
   background: var(--brand-blue);
+  box-shadow: 0 2px 12px rgba(31,74,94,0.25);
 }
 
 .logo-on-light img,
 .logo-on-dark img {
-  width: clamp(140px, 28vw, 220px);
+  width: clamp(100px, 14vw, 140px);
   height: auto;
   display: block;
 }
 
 .logo-usage-label {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
