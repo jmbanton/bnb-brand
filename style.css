@@ -246,6 +246,15 @@ h3 {
 }
 
 /* ── VISUAL ELEMENTS ── */
+.mountain-img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
 .mountain-layers {
   display: flex;
   flex-direction: column;
@@ -283,7 +292,7 @@ h3 {
 /* Chain link standalone demo */
 .chain-link-demo {
   width: 52px;
-  height: 20px;
+  height: auto;
   display: block;
   margin-bottom: 0.75rem;
 }
@@ -307,67 +316,11 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-.hex-badge-sample {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--brand-blue);
-  color: white;
-  padding: 2.25rem 3rem;
-  clip-path: polygon(15% 0%, 85% 0%, 100% 20%, 100% 80%, 85% 100%, 15% 100%, 0% 80%, 0% 20%);
-  text-align: center;
-  min-width: 280px;
-}
-
-.chain-link {
-  width: 40px;
-  height: 16px;
+.hex-badge-img {
   display: block;
-  flex-shrink: 0;
-}
-
-.hex-eyebrow {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
-}
-
-.hex-sub {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.4;
-}
-
-.hex-headline {
-  font-family: 'TAYDumpling', 'Cabin', sans-serif;
-  font-size: 2.25rem;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  color: white;
-}
-
-.hex-body {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
-  line-height: 1.5;
-}
-
-.hex-tagline {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--cream);
-  line-height: 1.4;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 /* Sign-off block */
@@ -394,11 +347,9 @@ h3 {
   height: auto;
 }
 
-.signoff-names {
-  font-family: 'TAYDreamboat', 'Cabin', serif;
-  font-size: 1.4rem;
-  color: var(--cream);
-  letter-spacing: 0.03em;
+.signoff-names-img {
+  width: clamp(140px, 22vw, 220px);
+  height: auto;
 }
 
 .signoff-tagline {
@@ -569,7 +520,7 @@ h3 {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: white;
+  color: var(--cream);
 }
 
 .flavor-body {
@@ -621,12 +572,12 @@ footer a {
   text-decoration: none;
 }
 
-.footer-names {
-  font-family: 'TAYDreamboat', 'Cabin', serif;
-  font-size: 1.2rem;
-  color: var(--cream);
+.footer-names-img {
+  width: clamp(120px, 18vw, 180px);
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
   opacity: 0.85;
-  margin-bottom: 0.5rem;
 }
 
 .footer-note {
