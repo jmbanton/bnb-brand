@@ -57,27 +57,22 @@ header {
   background: var(--brand-blue);
   color: white;
   text-align: center;
-  padding: 3.5rem 1rem 3rem;
+  padding: 3rem 1rem 2.5rem;
 }
 
-header h1 {
-  font-family: 'TAYKula', 'Cabin', sans-serif;
-  font-size: clamp(3rem, 10vw, 6rem);
-  font-weight: normal;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-header h1 span {
-  color: var(--cream);
+.header-logo {
+  display: block;
+  margin: 0 auto;
+  width: clamp(200px, 40vw, 340px);
+  height: auto;
 }
 
 .tagline {
-  margin-top: 0.85rem;
+  margin-top: 1rem;
   font-family: 'TAYDreamboat', 'Cabin', serif;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   letter-spacing: 0.06em;
+  color: var(--cream);
   opacity: 0.9;
 }
 
@@ -351,8 +346,16 @@ footer {
   background: var(--dark);
   color: rgba(255,255,255,0.6);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem 2rem;
   font-size: 0.85rem;
+}
+
+.footer-sig {
+  display: block;
+  margin: 0 auto 1.25rem;
+  width: clamp(160px, 30vw, 240px);
+  height: auto;
+  opacity: 0.85;
 }
 
 footer a {
