@@ -2,15 +2,45 @@
    THE BIKER & BAKER — Brand Reference Site
    ───────────────────────────────────────── */
 
+/* ── FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@font-face {
+  font-family: 'TAYKula';
+  src: url('fonts/TAYKula.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TAYDumpling';
+  src: url('fonts/TAYDumpling.woff') format('woff'),
+       url('fonts/TAYDumpling.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TAYDreamboat';
+  src: url('fonts/TAYDreamboat.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --brand-blue:   #2855A4;
-  --cream:        #F2E6D0;
-  --dark:         #1A1A1A;
-  --mid:          #555;
-  --light:        #f9f7f4;
-  --border:       #e0d8cc;
+  /* Brand colors — sourced from live thebikerandbaker.com Shopify theme */
+  --brand-blue:   #334FB4;
+  --cream:        #F1EAE6;
+  --dark:         #242833;
+  --brand-dark:   #1F4A5E;
+  --mid:          #5A6A74;
+  --light:        #faf7f5;
+  --border:       #e4dbd5;
   --radius:       8px;
   --max-width:    1100px;
 }
@@ -18,7 +48,7 @@
 body {
   font-family: 'Cabin', Georgia, serif;
   background: var(--light);
-  color: var(--dark);
+  color: var(--brand-dark);
   line-height: 1.6;
 }
 
@@ -27,14 +57,16 @@ header {
   background: var(--brand-blue);
   color: white;
   text-align: center;
-  padding: 3rem 1rem 2.5rem;
+  padding: 3.5rem 1rem 3rem;
 }
 
 header h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-family: 'TAYKula', 'Cabin', sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: normal;
+  letter-spacing: 0.06em;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 header h1 span {
@@ -42,11 +74,11 @@ header h1 span {
 }
 
 .tagline {
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.85;
+  margin-top: 0.85rem;
+  font-family: 'TAYDreamboat', 'Cabin', serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  letter-spacing: 0.06em;
+  opacity: 0.9;
 }
 
 /* ── NAV ── */
@@ -65,8 +97,9 @@ nav a {
   color: var(--cream);
   text-decoration: none;
   padding: 0.75rem 1.5rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   transition: background 0.2s;
 }
@@ -90,19 +123,21 @@ section {
 section:last-child { border-bottom: none; }
 
 h2 {
-  font-size: 1.75rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
+  font-family: 'TAYDumpling', 'Cabin', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: normal;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--brand-blue);
   margin-bottom: 1.75rem;
+  line-height: 1.1;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: var(--mid);
   margin: 1.5rem 0 1rem;
 }
@@ -129,6 +164,7 @@ h3 {
 .swatch-name {
   font-weight: 700;
   font-size: 0.85rem;
+  color: var(--brand-dark);
 }
 
 .swatch-detail {
@@ -160,7 +196,7 @@ h3 {
 
 .type-sample {
   margin-bottom: 0.5rem;
-  color: var(--dark);
+  color: var(--brand-dark);
   line-height: 1.2;
 }
 
@@ -193,7 +229,8 @@ h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
 }
 
 .voice-do {
@@ -224,6 +261,7 @@ h3 {
   border-radius: 0 var(--radius) var(--radius) 0;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  color: var(--brand-dark);
 }
 
 .phrases {
@@ -258,10 +296,11 @@ h3 {
 }
 
 .pillar h3 {
-  color: var(--dark);
+  color: var(--brand-dark);
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
 }
 
 .pillar p {
@@ -285,10 +324,13 @@ h3 {
 }
 
 .flavor-card h3 {
-  color: var(--dark);
+  font-family: 'TAYDumpling', 'Cabin', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--brand-dark);
   margin-top: 0;
   margin-bottom: 0.25rem;
-  font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 
 .bag-color {
