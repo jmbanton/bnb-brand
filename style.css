@@ -249,7 +249,7 @@ h3 {
 .mountain-img {
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 480px;
   height: auto;
   border-radius: var(--radius);
   margin-bottom: 1.5rem;
@@ -291,10 +291,11 @@ h3 {
 
 /* Chain link standalone demo */
 .chain-link-demo {
-  width: 52px;
+  width: 96px;
   height: auto;
   display: block;
   margin-bottom: 0.75rem;
+  image-rendering: auto;
 }
 
 .chain-link-coming {
@@ -318,7 +319,7 @@ h3 {
 
 .hex-badge-img {
   display: block;
-  max-width: 300px;
+  max-width: 360px;
   width: 100%;
   height: auto;
 }
