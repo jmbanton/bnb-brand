@@ -312,16 +312,27 @@ h3 {
   border-radius: 3px;
 }
 
-/* Hex badge demo */
+/* Hex badge demo — SVGs are full 1366×768 banner canvases; badge is centered.
+   Wrapper crops to badge area; img is oversized and centered to zoom in. */
 .hex-demo {
   margin-bottom: 1.5rem;
 }
 
+.hex-badge-wrapper {
+  width: 260px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
 .hex-badge-img {
-  display: block;
-  max-width: 360px;
-  width: 100%;
-  height: auto;
+  width: 760px;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Sign-off block */
