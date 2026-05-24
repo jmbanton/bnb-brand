@@ -280,6 +280,15 @@ h3 {
   font-weight: 700;
 }
 
+/* Chain link standalone demo */
+.chain-link-demo {
+  width: 52px;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
 /* Hex badge demo */
 .hex-demo {
   margin-bottom: 1.5rem;
@@ -289,43 +298,60 @@ h3 {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.5rem;
   background: var(--brand-blue);
   color: white;
-  padding: 1.5rem 2.5rem;
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 2.25rem 3rem;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 20%, 100% 80%, 85% 100%, 15% 100%, 0% 80%, 0% 20%);
   text-align: center;
-  min-width: 220px;
+  min-width: 280px;
+}
+
+.chain-link {
+  width: 40px;
+  height: auto;
+  display: block;
+  color: rgba(255,255,255,0.65);
 }
 
 .hex-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+.hex-sub {
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  opacity: 0.8;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.4;
 }
 
 .hex-headline {
   font-family: 'TAYDumpling', 'Cabin', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.05em;
+  font-size: 2.25rem;
+  letter-spacing: 0.04em;
   line-height: 1;
+  color: white;
 }
 
 .hex-body {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  opacity: 0.9;
-  line-height: 1.4;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
 }
 
 .hex-tagline {
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--cream);
   line-height: 1.4;
@@ -355,10 +381,17 @@ h3 {
   height: auto;
 }
 
+.signoff-names {
+  font-family: 'TAYDreamboat', 'Cabin', serif;
+  font-size: 1.4rem;
+  color: var(--cream);
+  letter-spacing: 0.03em;
+}
+
 .signoff-tagline {
   font-family: 'TAYDreamboat', 'Cabin', serif;
-  font-size: 1.1rem;
-  color: var(--cream);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
   letter-spacing: 0.04em;
 }
 
@@ -484,7 +517,6 @@ h3 {
 .pillar {
   background: white;
   border: 1px solid var(--border);
-  border-top: 3px solid var(--brand-blue);
   border-radius: var(--radius);
   padding: 1.25rem;
 }
@@ -514,27 +546,40 @@ h3 {
   background: white;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.flavor-band {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.flavor-body {
+  padding: 1.25rem 1.5rem 1.5rem;
 }
 
 .flavor-card h3 {
   font-family: 'TAYDumpling', 'Cabin', sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
-  color: var(--brand-dark);
+  color: var(--brand-blue);
   margin-top: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
   letter-spacing: 0.03em;
 }
 
 .bag-color {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--mid);
   font-style: italic;
   margin-bottom: 0.75rem;
 }
 
-.flavor-card p:last-child {
+.flavor-body p:last-child {
   font-size: 0.9rem;
   color: var(--mid);
   line-height: 1.5;
@@ -560,6 +605,14 @@ footer {
 footer a {
   color: var(--cream);
   text-decoration: none;
+}
+
+.footer-names {
+  font-family: 'TAYDreamboat', 'Cabin', serif;
+  font-size: 1.2rem;
+  color: var(--cream);
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
 }
 
 .footer-note {
