@@ -245,6 +245,163 @@ h3 {
   margin-top: 0.5rem;
 }
 
+/* ── VISUAL ELEMENTS ── */
+.mountain-layers {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 480px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.mountain-layer {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.visual-rules {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--mid);
+  padding-left: 0;
+}
+
+.visual-rules li::before {
+  content: "→ ";
+  color: var(--brand-blue);
+  font-weight: 700;
+}
+
+/* Hex badge demo */
+.hex-demo {
+  margin-bottom: 1.5rem;
+}
+
+.hex-badge-sample {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--brand-blue);
+  color: white;
+  padding: 1.5rem 2.5rem;
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  text-align: center;
+  min-width: 220px;
+}
+
+.hex-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.hex-headline {
+  font-family: 'TAYDumpling', 'Cabin', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.hex-body {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.hex-tagline {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
+  line-height: 1.4;
+}
+
+/* Sign-off block */
+.signoff-demo {
+  background: var(--brand-blue);
+  border-radius: var(--radius);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.signoff-gratitude {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+}
+
+.signoff-sig {
+  width: clamp(120px, 18vw, 180px);
+  height: auto;
+}
+
+.signoff-tagline {
+  font-family: 'TAYDreamboat', 'Cabin', serif;
+  font-size: 1.1rem;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+}
+
+/* Brand claims strip */
+.claims-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.claim {
+  flex: 1;
+  min-width: 140px;
+  padding: 0.85rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  text-align: center;
+  line-height: 1.4;
+  border-right: 1px solid var(--border);
+  background: white;
+}
+
+.claim:last-child {
+  border-right: none;
+}
+
+.claim span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.66rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: var(--mid);
+  margin-top: 0.2rem;
+}
+
 /* ── VOICE ── */
 .voice-grid {
   display: grid;
